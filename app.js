@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');//seeting view engine to use express
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));//so it sees in public folder to see static files
 
-mongoose.connect("mongodb+srv://Rohan-Kacheria:Rmk9930042066@cluster0.9cth0.mongodb.net/todolistDB",{useNewUrlParser:true,useUnifiedTopology:true});//connecting to mongoose
+mongoose.connect("mongodb+srv://<userName>:<Password>@cluster0.9cth0.mongodb.net/<dbName>",{useNewUrlParser:true,useUnifiedTopology:true});//connecting to mongoose
 
 //creating a schema named items
 const itemsSchema={
